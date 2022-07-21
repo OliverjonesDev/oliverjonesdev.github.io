@@ -1,0 +1,114 @@
+        /* Add a black background color to the top navigation */
+        
+        html * {
+            font-family: sans-serif;
+        }
+        
+        .topnav {
+            margin: auto;
+            overflow: auto;
+            background-color: #222;
+        }
+        /* Style the links inside the navigation bar */
+        
+        body {
+            margin: 0;
+        }
+        
+        .topnav .navHolder {
+            max-width: 60%;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            max-height: 10%;
+        }
+        
+        iframe {
+            padding: 1%;
+        }
+        
+        .topnav .brand a {
+            float: left;
+            margin: auto;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 28px;
+        }
+        
+        .topnav .nav a {
+            margin: auto;
+            display: inline-block;
+            color: #666;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 19px;
+        }
+        /* Change the color of links on hover */
+        
+        .topnav a:hover {
+            color: white;
+        }
+        /* Hide the link that should open and close the topnav on small screens */
+        
+        .headers {
+            overflow: hidden;
+            margin: auto;
+            text-align: center;
+            border-bottom: 1px solid #303030;
+            font-weight: bold;
+            width: 80%;
+        }
+        
+        ul {
+            margin: 0%;
+            padding: 0px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create four equal columns that sits next to each other */
+        
+        .column {
+            float: left;
+            width: 33%;
+            text-align: center;
+            padding-bottom: 2%;
+            padding-left: .15%;
+            padding-right: .15%;
+        }
+        
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            border-radius: 5%;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        
+        .column img:hover {
+            background-color: #000;
+            opacity: 0.5;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
